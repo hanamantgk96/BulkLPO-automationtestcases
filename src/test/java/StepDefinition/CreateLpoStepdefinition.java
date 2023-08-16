@@ -350,6 +350,18 @@ public class CreateLpoStepdefinition {
    	 String actualName3 = lpo.sellernamevalidation();
    	 System.out.println("seller name validation : " + actualName3);
    	 Assert.assertEquals(actualName3, ExpectedName3, "Title is not matched"); 
-   	}    
+   	}   
     
+    // selected date wise we can create lpo
+    @Given("^search the From date and To date$")
+    public void search_the_from_date_and_to_date() throws Throwable {
+    }
+
+    @When("^select all the products1$")
+    public void select_all_the_products1() throws Throwable {
+    }
+
+    @Then("^generate the lpo for sellected products$")
+    public void generate_the_lpo_for_sellected_products() throws Throwable {
+    }
 }

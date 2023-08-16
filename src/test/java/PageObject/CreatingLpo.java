@@ -356,5 +356,7 @@ public class CreatingLpo {
 					String actualName=driver.findElement(sellername1).getText();
 					return actualName;
 			}
-			    
+		
+		// selected date wise we can generate Lpo
+				By selectFromdate = By.xpath("");
 }

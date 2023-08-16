@@ -13,12 +13,12 @@ Feature: Title of your feature
     Then click on create LPOs
 
   @Login_02
-  Scenario: without selecti any product we can validte the popup
+  Scenario: without select any product we can move next page and validte the popup
   Given click next page 
   When validate the popup successfully
   
   @Login_03
-  Scenario: with selecting product we can validate all products consolidate
+  Scenario: with selecting product we can validate all products in consolidate
   Given click the checkbox
   When select all the products
   Then validate selected products are going to consolidation page
@@ -68,9 +68,15 @@ Feature: Title of your feature
     
     @Login_10
     Scenario: same seller with many products
-    Given navigate the page
+    Given navigate the lpo page
     When select products for same seller
     Then on cosolidation page we need to validate all the products with same seller
+    
+    @Login_11
+    Scenario: date wise we can create lpo
+    Given search the From date and To date
+    When select all the products
+    Then generate the lpo for sellected products
 
 
 
